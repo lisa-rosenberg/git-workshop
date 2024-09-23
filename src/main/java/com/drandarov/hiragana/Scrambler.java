@@ -16,8 +16,8 @@ public class Scrambler {
      * Choose any amount of datasets from {@link HiraganaDataSet} in the first line.
      */
     public static void main(final String[] args) {
-        final String[][] dataSet = Stream.of(temp, hiraganaData, hiraganaExtraData)
-                .flatMap(Stream::of).toArray(String[][]::new);
+        final String[][] dataSet =
+                Stream.of(temp, hiraganaData, hiraganaExtraData).flatMap(Stream::of).toArray(String[][]::new);
 
         final int minSyllableCount = 2; // e.g. "ba.ka"
         final int maxSyllableCount = 5; // e.g. "ha.hi.fu.he.ho"
@@ -28,8 +28,8 @@ public class Scrambler {
 
         for (int i = 0; i < wordCount; i++) {
             for (int j = 0; j < random.nextInt(minSyllableCount, maxSyllableCount + 1); j++) {
-                System.out.print(dataSet[set = random.nextInt(0, dataSet.length)]
-                                              [random.nextInt(0, dataSet[set].length)]);
+                System.out.print(
+                        dataSet[set = random.nextInt(0, dataSet.length)][random.nextInt(0, dataSet[set].length)]);
             }
             System.out.println(/*"\n"*/); // Uncomment if you want empty lines between words
         }
