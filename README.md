@@ -47,3 +47,4 @@ Sample Output with Romaji-Data:
     getobuwa
     romikipeba
     suwo
+    shiba
