@@ -48,3 +48,4 @@ Sample Output with Romaji-Data:
     romikipeba
     suwo
     shiba
+    inu
