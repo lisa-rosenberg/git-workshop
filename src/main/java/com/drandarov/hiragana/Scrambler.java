@@ -3,7 +3,7 @@ package com.drandarov.hiragana;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Stream;
 
-import static com.drandarov.hiragana.HiraganaDataSet.*;
+import static com.drandarov.hiragana.KatakanaDataSet.*;
 
 /**
  * @author dmitrij-drandarov
@@ -16,7 +16,7 @@ public class Scrambler {
      * Choose any amount of datasets from {@link HiraganaDataSet} in the first line.
      */
     public static void main(final String[] args) {
-        final String[][] dataSet = Stream.of(temp, hiraganaData, hiraganaExtraData)
+        final String[][] dataSet = Stream.of(temp, katakanaData, katakanaExtraData)
                 .flatMap(Stream::of).toArray(String[][]::new);
 
         final int minSyllableCount = 2; // e.g. "ba.ka"
