@@ -49,3 +49,6 @@ Sample Output with Romaji-Data:
     suwo
     shiba
     inu
+    hime
+    kami
+    megane
