@@ -24,6 +24,11 @@ Sample Output with Hiragana-Data:
     わはんひ
     よは
     くぞくひゃ
+    しば
+    いぬ
+    ひめ
+    かみ
+    めがね
 
 Sample Output with Romaji-Data:
 
